@@ -10,7 +10,6 @@ const FormLogin = () => {
           <Inputform
             label="Email"
             name="email"
-            id="email"
             placeholder="mail.com"
             type="email"
           />
@@ -19,7 +18,6 @@ const FormLogin = () => {
           <Inputform
             label="Password"
             name="password"
-            id="password"
             placeholder="***"
             type="password"
           />
