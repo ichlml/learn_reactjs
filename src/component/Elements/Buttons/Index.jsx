@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button_elements = ({ props, colorText }) => {
+const Button_elements = ({ props, colorText, text }) => {
   const colors = {
     red: "bg-red-500 hover:bg-red-700",
     blue: "bg-blue-500 hover:bg-blue-700",
@@ -18,7 +18,7 @@ const Button_elements = ({ props, colorText }) => {
         warna[colorText] || "text-gray-700"
       } ${colors[props] || "bg-gray-500 hover:bg-gray-700"}`}
     >
-      Elements button
+      {text}
     </button>
   );
 };
