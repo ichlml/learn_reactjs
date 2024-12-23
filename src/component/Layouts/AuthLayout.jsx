@@ -1,5 +1,3 @@
-import React from "react";
-
 const AuthLayout = (props) => {
   const { children, title } = props;
   return (
