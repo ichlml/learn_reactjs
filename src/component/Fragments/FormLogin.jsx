@@ -3,9 +3,13 @@ import Button_elements from "../Elements/Buttons/Index";
 import Inputform from "../Elements/Input/Index";
 
 const FormLogin = () => {
+  const HandleLogin = (event) => {
+    event.preventDefault();
+    console.log("login");
+  };
   return (
     <div>
-      <form action="">
+      <form onSubmit={HandleLogin}>
         <div className="mb-4">
           <Inputform
             label="Email"
@@ -23,7 +27,12 @@ const FormLogin = () => {
           />
         </div>
 
-        <Button_elements colorText="white" text="Login" props={"blue"} />
+        <Button_elements
+          colorText="white"
+          text="Login"
+          type="submit"
+          props={"blue"}
+        />
       </form>
     </div>
   );
